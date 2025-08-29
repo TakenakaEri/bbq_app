@@ -63,8 +63,8 @@
         <% event.users.each do |user| %>
           <%= link_to user_path(user), class: "participant-card" do %>
             <div class="avatar">
-              <% if user.avatar.attached? %>
-                <%= image_tag user.avatar, alt: user.name %>
+              <% if user.avatar_url.present? %>
+                <%= image_tag user.avatar_url, alt: user.name %>
               <% else %>
                 <%= user.name.first %>
               <% end %>
@@ -75,5 +75,8 @@
         <% end %>
       </div>
     </div>
+
+
+
   <% end %>
 </div>

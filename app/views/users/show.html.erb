@@ -10,8 +10,8 @@
   
   <div class="user-detail">
     <div class="avatar">
-      <% if @user.avatar.attached? %>
-        <%= image_tag @user.avatar, alt: @user.name %>
+      <% if @user.avatar_url.present? %>
+        <%= image_tag @user.avatar_url, alt: @user.name %>
       <% else %>
         <%= @user.name.first %>
       <% end %>
