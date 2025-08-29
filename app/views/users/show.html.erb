@@ -24,12 +24,6 @@
       <% if @user.twitter_url.present? %>
         <%= link_to @user.twitter_url, target: "_blank", class: "social-link" do %>🐦<% end %>
       <% end %>
-      <% if @user.instagram_url.present? %>
-        <%= link_to @user.instagram_url, target: "_blank", class: "social-link" do %>📷<% end %>
-      <% end %>
-      <% if @user.facebook_url.present? %>
-        <%= link_to @user.facebook_url, target: "_blank", class: "social-link" do %>📘<% end %>
-      <% end %>
     </div>
     
     <% if @participation&.message.present? %>
