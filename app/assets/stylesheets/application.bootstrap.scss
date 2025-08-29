@@ -1,2 +1,35 @@
-@import 'bootstrap/scss/bootstrap';
-@import 'bootstrap-icons/font/bootstrap-icons';
+@import "bootstrap/scss/bootstrap";
+@import "bootstrap-icons/font/bootstrap-icons";
+
+// 基本設定
+@import "base/variables";
+@import "base/reset";
+
+// コンポーネント
+@import "components/cards";
+@import "components/avatars";
+@import "components/buttons";
+
+// ページ別
+@import "events";
+@import "users";
+
+// レスポンシブデザイン
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: $font-size-3xl;
+  }
+
+  .participants-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .event-info {
+    grid-template-columns: 1fr;
+  }
+
+  .user-detail {
+    padding: $spacing-xl $spacing-lg;
+    margin: $spacing-md;
+  }
+}

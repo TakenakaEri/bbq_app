@@ -1,0 +1,128 @@
+.hero-section {
+  background: $bg-primary;
+  border-radius: $border-radius;
+  overflow: hidden;
+  box-shadow: $shadow-sm;
+  margin-bottom: $spacing-2xl;
+}
+
+.hero-image {
+  height: 300px;
+  background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  color: white;
+}
+
+.event-details {
+  padding: $spacing-xl;
+}
+
+.event-title {
+  font-size: $font-size-3xl;
+  font-weight: 700;
+  color: $text-primary;
+  margin-bottom: $spacing-md;
+}
+
+.event-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: $spacing-lg;
+  margin-bottom: $spacing-xl;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: $spacing-md;
+  background: $bg-tertiary;
+  border-radius: $border-radius-sm;
+}
+
+.info-icon {
+  font-size: $spacing-lg;
+}
+
+.info-content {
+  strong {
+    display: block;
+    color: $text-secondary;
+    font-size: 0.9rem;
+    margin-bottom: 0.25rem;
+  }
+}
+
+.participants-section {
+  background: $bg-primary;
+  border-radius: $border-radius;
+  padding: $spacing-xl;
+  box-shadow: $shadow-sm;
+}
+
+.section-title {
+  font-size: $font-size-2xl;
+  font-weight: 700;
+  color: $text-primary;
+  margin-bottom: $spacing-xl;
+  text-align: center;
+}
+
+.participants-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: $spacing-lg;
+}
+
+.participant-card {
+  background: $bg-primary;
+  border: 2px solid $border-light;
+  border-radius: $border-radius;
+  padding: $spacing-lg;
+  text-align: center;
+  transition: $transition-base;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+
+  &:hover {
+    border-color: $primary-color;
+    transform: translateY(-4px);
+    box-shadow: $shadow-md;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, $primary-color, $secondary-color);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+  }
+
+  &:hover::before {
+    transform: scaleX(1);
+  }
+}
+
+.participant-name {
+  font-size: $font-size-xl;
+  font-weight: 600;
+  color: $text-primary;
+  margin-bottom: $spacing-sm;
+}
+
+.participant-job {
+  color: $text-muted;
+  font-size: $font-size-sm;
+  background: $bg-tertiary;
+  padding: $spacing-sm $spacing-md;
+  border-radius: 20px;
+  display: inline-block;
+}

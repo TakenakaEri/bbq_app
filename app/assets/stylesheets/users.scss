@@ -1,0 +1,46 @@
+.user-detail {
+  background: $bg-primary;
+  border-radius: $border-radius;
+  padding: $spacing-2xl;
+  box-shadow: $shadow-sm;
+  max-width: 600px;
+  margin: $spacing-xl auto;
+  text-align: center;
+
+  .participant-name {
+    font-size: $font-size-3xl;
+    margin-bottom: $spacing-md;
+  }
+
+  .participant-job {
+    font-size: $font-size-lg;
+    margin-bottom: $spacing-xl;
+  }
+}
+
+.user-message {
+  background: $bg-secondary;
+  border-left: 4px solid $primary-color;
+  padding: $spacing-lg;
+  border-radius: $border-radius-sm;
+  text-align: left;
+  margin-top: $spacing-xl;
+
+  h3 {
+    color: $text-primary;
+    margin-bottom: $spacing-md;
+    font-size: $font-size-lg;
+  }
+
+  p {
+    color: $text-secondary;
+    font-style: italic;
+  }
+}
+
+.social-links {
+  display: flex;
+  gap: $spacing-md;
+  justify-content: center;
+  margin-top: $spacing-xl;
+}
