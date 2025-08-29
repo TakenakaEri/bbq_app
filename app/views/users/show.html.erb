@@ -1,10 +1,49 @@
-<p style="color: green"><%= notice %></p>
+<div class="header">
+  <div class="container">
+    <h1>🍖 BBQアプリ</h1>
+    <p>参加者詳細</p>
+  </div>
+</div>
 
-<%= render @user %>
-
-<div>
-  <%= link_to "Edit this user", edit_user_path(@user) %> |
-  <%= link_to "Back to users", users_path %>
-
-  <%= button_to "Destroy this user", @user, method: :delete %>
+<div class="container">
+  <%= link_to "← 参加者一覧に戻る", root_path, class: "back-button" %>
+  
+  <div class="user-detail">
+    <div class="avatar">
+      <% if @user.avatar.attached? %>
+        <%= image_tag @user.avatar, alt: @user.name %>
+      <% else %>
+        <%= @user.name.first %>
+      <% end %>
+    </div>
+    
+    <h2 class="participant-name"><%= @user.name %></h2>
+    <span class="participant-job"><%= @user.job || "未設定" %></span>
+    
+    <div class="social-links">
+      <% if @user.twitter_url.present? %>
+        <%= link_to @user.twitter_url, target: "_blank", class: "social-link" do %>🐦<% end %>
+      <% end %>
+      <% if @user.instagram_url.present? %>
+        <%= link_to @user.instagram_url, target: "_blank", class: "social-link" do %>📷<% end %>
+      <% end %>
+      <% if @user.facebook_url.present? %>
+        <%= link_to @user.facebook_url, target: "_blank", class: "social-link" do %>📘<% end %>
+      <% end %>
+    </div>
+    
+    <% if @participation&.message.present? %>
+      <div class="user-message">
+        <h3>参加への意気込み</h3>
+        <p>"<%= @participation.message %>"</p>
+      </div>
+    <% end %>
+    
+    <% if @user.bio.present? %>
+      <div class="user-message">
+        <h3>自己紹介</h3>
+        <p><%= simple_format(@user.bio) %></p>
+      </div>
+    <% end %>
+  </div>
 </div>
