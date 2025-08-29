@@ -1,15 +1,549 @@
-<p>TOPページです</p>
-<p style="color: green"><%= notice %></p>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBQアプリ - 夏のBBQ大会</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: #f8fafc;
+            line-height: 1.6;
+            color: #334155;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* ヘッダー */
+        .header {
+            background: linear-gradient(135deg, #ff6b6b, #ffa500);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+        
+        .header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        
+        /* アイキャッチ */
+        .hero-section {
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            margin-bottom: 3rem;
+        }
+        
+        .hero-image {
+            height: 300px;
+            background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            color: white;
+        }
+        
+        .event-details {
+            padding: 2rem;
+        }
+        
+        .event-title {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #1e293b;
+            margin-bottom: 1rem;
+        }
+        
+        .event-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        
+        .info-item {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 1rem;
+            background: #f1f5f9;
+            border-radius: 12px;
+        }
+        
+        .info-icon {
+            font-size: 1.5rem;
+        }
+        
+        .info-content strong {
+            display: block;
+            color: #475569;
+            font-size: 0.9rem;
+            margin-bottom: 0.25rem;
+        }
+        
+        .map-link {
+            color: #3b82f6;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .map-link:hover {
+            text-decoration: underline;
+        }
+        
+        /* 参加者セクション */
+        .participants-section {
+            background: white;
+            border-radius: 16px;
+            padding: 2rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .section-title {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #1e293b;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        
+        .participants-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .participant-card {
+            background: white;
+            border: 2px solid #e2e8f0;
+            border-radius: 16px;
+            padding: 1.5rem;
+            text-align: center;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .participant-card:hover {
+            border-color: #ff6b6b;
+            transform: translateY(-4px);
+            box-shadow: 0 8px 25px rgba(255, 107, 107, 0.15);
+        }
+        
+        .participant-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #ff6b6b, #ffa500);
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+        
+        .participant-card:hover::before {
+            transform: scaleX(1);
+        }
+        
+        .avatar {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin: 0 auto 1rem;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.8rem;
+            font-weight: 700;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .participant-name {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #1e293b;
+            margin-bottom: 0.5rem;
+        }
+        
+        .participant-job {
+            color: #64748b;
+            font-size: 0.95rem;
+            background: #f1f5f9;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            display: inline-block;
+        }
+        
+        /* 参加者詳細ページ */
+        .user-detail {
+            background: white;
+            border-radius: 16px;
+            padding: 3rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 2rem auto;
+            text-align: center;
+        }
+        
+        .user-detail .avatar {
+            width: 120px;
+            height: 120px;
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .user-detail .participant-name {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .user-detail .participant-job {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+        }
+        
+        .user-message {
+            background: #f8fafc;
+            border-left: 4px solid #ff6b6b;
+            padding: 1.5rem;
+            border-radius: 12px;
+            text-align: left;
+            margin-top: 2rem;
+        }
+        
+        .user-message h3 {
+            color: #1e293b;
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+        
+        .user-message p {
+            color: #475569;
+            font-style: italic;
+        }
+        
+        .back-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: linear-gradient(135deg, #ff6b6b, #ffa500);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            margin-bottom: 2rem;
+        }
+        
+        .back-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-top: 2rem;
+        }
+        
+        .social-link {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: #e2e8f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+        }
+        
+        .social-link:hover {
+            background: #ff6b6b;
+            color: white;
+            transform: scale(1.1);
+        }
+        
+        .page-toggle {
+            text-align: center;
+            margin: 2rem 0;
+        }
+        
+        .toggle-btn {
+            background: #3b82f6;
+            color: white;
+            padding: 0.75rem 2rem;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        
+        .toggle-btn:hover {
+            background: #2563eb;
+            transform: translateY(-2px);
+        }
+        
+        .hidden {
+            display: none;
+        }
+        
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .participants-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .event-info {
+                grid-template-columns: 1fr;
+            }
+            
+            .user-detail {
+                padding: 2rem 1.5rem;
+                margin: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <h1>🍖 BBQアプリ</h1>
+            <p>みんなで楽しむバーベキューイベント</p>
+        </div>
+    </div>
 
-<h1>Events</h1>
+    <!-- TOPページ -->
+    <div class="container">
+        <div id="topPage">
+            <!-- アイキャッチ・イベント詳細 -->
+            <div class="hero-section">
+                <div class="hero-image">
+                    🔥
+                </div>
+                <div class="event-details">
+                    <h2 class="event-title">夏のBBQ大会 2025</h2>
+                    
+                    <div class="event-info">
+                        <div class="info-item">
+                            <span class="info-icon">📅</span>
+                            <div class="info-content">
+                                <strong>日時</strong>
+                                2025年8月30日（土） 11:00〜
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <span class="info-icon">📍</span>
+                            <div class="info-content">
+                                <strong>場所</strong>
+                                多摩川河川敷BBQ場
+                                <br>
+                                <a href="https://maps.google.com/?q=35.6762,139.6503" target="_blank" class="map-link">
+                                    GoogleMapで見る →
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <span class="info-icon">👥</span>
+                            <div class="info-content">
+                                <strong>参加者</strong>
+                                8名参加予定
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <span class="info-icon">💡</span>
+                            <div class="info-content">
+                                <strong>概要</strong>
+                                夏の終わりを楽しむBBQイベント！
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-<div id="events">
-  <% @events.each do |event| %>
-    <%= render event %>
-    <p>
-      <%= link_to "Show this event", event %>
-    </p>
-  <% end %>
-</div>
+            <!-- 参加者一覧 -->
+            <div class="participants-section">
+                <h3 class="section-title">参加者一覧</h3>
+                <div class="participants-grid">
+                    <div class="participant-card" onclick="showUserDetail('tanaka')">
+                        <div class="avatar">
+                            田
+                        </div>
+                        <h4 class="participant-name">田中 太郎</h4>
+                        <span class="participant-job">エンジニア</span>
+                    </div>
+                    
+                    <div class="participant-card" onclick="showUserDetail('sato')">
+                        <div class="avatar">
+                            佐
+                        </div>
+                        <h4 class="participant-name">佐藤 花子</h4>
+                        <span class="participant-job">デザイナー</span>
+                    </div>
+                    
+                    <div class="participant-card" onclick="showUserDetail('yamada')">
+                        <div class="avatar">
+                            山
+                        </div>
+                        <h4 class="participant-name">山田 次郎</h4>
+                        <span class="participant-job">営業</span>
+                    </div>
+                    
+                    <div class="participant-card" onclick="showUserDetail('suzuki')">
+                        <div class="avatar">
+                            鈴
+                        </div>
+                        <h4 class="participant-name">鈴木 美咲</h4>
+                        <span class="participant-job">マーケター</span>
+                    </div>
+                    
+                    <div class="participant-card" onclick="showUserDetail('watanabe')">
+                        <div class="avatar">
+                            渡
+                        </div>
+                        <h4 class="participant-name">渡辺 健一</h4>
+                        <span class="participant-job">プロジェクトマネージャー</span>
+                    </div>
+                    
+                    <div class="participant-card" onclick="showUserDetail('takahashi')">
+                        <div class="avatar">
+                            高
+                        </div>
+                        <h4 class="participant-name">高橋 麻衣</h4>
+                        <span class="participant-job">人事</span>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-<%= link_to "New event", new_event_path %>
+        <!-- 参加者詳細ページ -->
+        <div id="userDetail" class="hidden">
+            <a href="#" class="back-button" onclick="showTopPage()">
+                ← 参加者一覧に戻る
+            </a>
+            
+            <div class="user-detail">
+                <div class="avatar" id="detailAvatar">
+                    田
+                </div>
+                <h2 class="participant-name" id="detailName">田中 太郎</h2>
+                <span class="participant-job" id="detailJob">エンジニア</span>
+                
+                <div class="social-links">
+                    <a href="#" class="social-link">🐦</a>
+                    <a href="#" class="social-link">📷</a>
+                    <a href="#" class="social-link">📘</a>
+                </div>
+                
+                <div class="user-message">
+                    <h3>参加への意気込み</h3>
+                    <p id="detailMessage">
+                        "BBQ大好きです！肉を焼くのが得意で、いつも美味しく焼けるように頑張ってます。みなさんよろしくお願いします！"
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const users = {
+            tanaka: {
+                avatar: '田',
+                name: '田中 太郎',
+                job: 'エンジニア',
+                message: 'BBQ大好きです！肉を焼くのが得意で、いつも美味しく焼けるように頑張ってます。みなさんよろしくお願いします！'
+            },
+            sato: {
+                avatar: '佐',
+                name: '佐藤 花子',
+                job: 'デザイナー',
+                message: '野菜料理が得意です。新鮮なサラダや野菜の串焼きを作りますので楽しみにしてください♪'
+            },
+            yamada: {
+                avatar: '山',
+                name: '山田 次郎',
+                job: '営業',
+                message: 'BBQ初心者ですが、みなさんと楽しい時間を過ごしたいです！よろしくお願いします。'
+            },
+            suzuki: {
+                avatar: '鈴',
+                name: '鈴木 美咲',
+                job: 'マーケター',
+                message: 'お酒とおつまみの準備は任せてください！盛り上げ役として頑張ります🍻'
+            },
+            watanabe: {
+                avatar: '渡',
+                name: '渡辺 健一',
+                job: 'プロジェクトマネージャー',
+                message: '全体の進行をサポートします。スケジュール通り楽しいBBQにしましょう！'
+            },
+            takahashi: {
+                avatar: '高',
+                name: '高橋 麻衣',
+                job: '人事',
+                message: 'チーム交流の機会として、みんなが楽しめるよう頑張ります。お話しましょう！'
+            }
+        };
+
+        function showUserDetail(userId) {
+            const user = users[userId];
+            if (!user) return;
+
+            document.getElementById('detailAvatar').textContent = user.avatar;
+            document.getElementById('detailName').textContent = user.name;
+            document.getElementById('detailJob').textContent = user.job;
+            document.getElementById('detailMessage').textContent = user.message;
+
+            document.getElementById('topPage').classList.add('hidden');
+            document.getElementById('userDetail').classList.remove('hidden');
+        }
+
+        function showTopPage() {
+            document.getElementById('topPage').classList.remove('hidden');
+            document.getElementById('userDetail').classList.add('hidden');
+        }
+    </script>
+</body>
+</html>
