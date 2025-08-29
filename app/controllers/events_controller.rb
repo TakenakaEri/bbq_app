@@ -3,13 +3,13 @@ class EventsController < ApplicationController
 
   # GET /events or /events.json
   def index
-    @events = Event.includes(users: :avatar_attachment)
+    @events = Event.includes(:users) 
   end
 
   # GET /events/1 or /events/1.json
   def show
     @event = Event.find(params[:id])
-    @participants = @event.users.includes(:avatar_attachment)
+    @participants = @event.users
   end
 
   # GET /events/new
