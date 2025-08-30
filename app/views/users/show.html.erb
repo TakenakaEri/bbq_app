@@ -22,7 +22,9 @@
   
     <div class="social-links">
       <% if @user.twitter_url.present? %>
-        <%= link_to @user.twitter_url, target: "_blank", class: "social-link" do %>x<% end %>
+        <%= link_to @user.twitter_url, target: "_blank", class: "social-link" do %>
+        <img width="20" height="20" alt="Image" src="https://github.com/user-attachments/assets/63705279-c306-4132-93e8-f7254e9e1708" />
+        <% end %>
       <% end %>
     </div>
 
