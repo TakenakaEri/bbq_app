@@ -19,47 +19,222 @@ bbq_event = Event.create!(
 puts "ユーザーを作成しています..."
 users_data = [
   {
-    name: "田中 太郎",
-    job: "エンジニア",
-    bio: "システム開発を担当しています。特にバックエンド開発が得意です。",
-    twitter_url: "https://twitter.com/tanaka_dev",
+    name: "Adachi Ryo",
+    job: "FindyのSRE",
+    bio: "1989年生まれのFindy/SRE。エンジニア歴は13年目。ホスティングから大規模なアドテクなどのインフラエンジニアとして携わる。現在はSREとしてサービスの信頼性向上やセキュリティ強化などを担当。個人事業主では数社サーバー保守とベンチャー企業のインフラコンサルティングを行うほか、TechBullを創業し、未経験者向けにSREのコーチングやコミュニティ運営、LT大会の開催、 会員管理システム「Members」の開発をリードしている。さらに、エンジニア向けYouTubeメディア「TECH WORLD」ではSREとの対談を行い、過去には脆弱性スキャナ「Vuls」のOSS活動にも貢献。愛犬でもある所長のBull氏に疲労困憊。",
+    twitter_url: "https://x.com/adachin0817",
     avatar_url: "" # GitHub Pagesの準備ができたら設定
   },
   {
-    name: "佐藤 花子",
-    job: "デザイナー",
-    bio: "UI/UXデザインを担当。ユーザーに優しいデザインを心がけています。",
-    twitter_url: "https://twitter.com/sato_design",
-    avatar_url: ""
+    name: "Hara Koji",
+    job: "FindyのSRE",
+    bio: "未経験からエンジニアへキャリアチェンジしエンジニア歴としては4年目となる。SESにて様々なAWS案件に携わる。SRE領域の知識を身につけるためTechBullコミュニティへ参画。元運用監視オペレーターという立場からAWSエンジニアやSREへキャリアアップした経験やクラウド関連の記事を執筆しつつ、コミュニティの技術フォローと1on1を実施し、現在はSREとして、Datadogでのオブザーバビリティ強化やTerraformでのIaC環境の整備、コスト削減施策の実施などを行っている。",
+    twitter_url: "https://x.com/kouzyunJa",
+    avatar_url: "" # GitHub Pagesの準備ができたら設定
+  },
+    {
+    name: "Tomita kazuki",
+    job: "ソフトウェアエンジニア・SRE",
+    bio: "約7年間、和食料理人として働き、コロナ禍をきっかけにエンジニアへとキャリアチェンジする。現在はRuby on Railsを中心にバックエンド開発を担当し、ReactやTypeScriptを使ったフロントエンド開発にも取り組んでいる。以前はプログラミングスクールを運営する会社で、エンジニア講師として未経験の方の学習支援を行う。TechBullに出会えたことで、今後はSREになるために技術のキャッチアップや運営チームとして活動。",
+    twitter_url: "https://x.com/Cooking_ENG",
+    avatar_url: "" # GitHub Pagesの準備ができたら設定
+  },
+    {
+    name: "Hashino Mikiko",
+    job: "バックエンドエンジニア",
+    bio: "学生時代は、エンジニア学生団体の代表として企画・運営を担いながら、エンジニアリングのインターンシップにも積極的に参加。新卒では、ファッションECサイトのバックエンド開発に携わる。現在は、Findyでバックエンドを担当。「omochi gem」のOSS開発もしており、Shibuya.rbも参加している。将来は Embedded SREを目指しています。",
+    twitter_url: "https://x.com/mikiko_bridge",
+    avatar_url: "" # GitHub Pagesの準備ができたら設定
+  },
+    {
+    name: "Taba Hiroki",
+    job: "SaaS開発",
+    bio: "学生時代はプログラミングスクールでメンターの経験。現在は24卒Webエンジニアとして、金融ドメインのSaaS開発に従事している。フロントエンドからインフラまで、フルスタックにできるエンジニアを目指している。",
+    twitter_url: "https://x.com/tabamarine220",
+    avatar_url: "" # GitHub Pagesの準備ができたら設定
+  },
+    {
+    name: "吉野友啓",
+    job: "テクノブレーン/キャリアアドバイザー",
+    bio: "酒場とダーツが好きです！微力ながら盛り上げられればと思います！",
+    twitter_url: "https://x.com/tbcyoshino",
+    avatar_url: "" # GitHub Pagesの準備ができたら設定
+  },
+    {
+    name: "くのやす",
+    job: "フルスタックエンジニア",
+    bio: "スタートアップでフルスタックエンジニアしてます。",
+    twitter_url: "https://x.com/kunoyasu",
+    avatar_url: "" # GitHub Pagesの準備ができたら設定
+  },
+    {
+    name: "財津宏幸",
+    job: "インフラエンジニア",
+    bio: "熊本出身の30歳です！経歴は、酪農組合→システム開発→自動車工場で、現在はインフラエンジニアとしてAWSの構築をしております。インフラエンジニアは1年目のペーペーですが、さまざまな技術を学びたく、参加させていただきました。",
+    twitter_url: "https://x.com/ponkichi_infra",
+    avatar_url: "" # GitHub Pagesの準備ができたら設定
+  },
+    {
+    name: "Taichi Iwaki",
+    job: "クラウドインフラエンジニア",
+    bio: "このようなコミュニティに参加するのは、初めてで不慣れな部分もあると思いますが、よろしくお願いします！",
+    twitter_url: "https://x.com/IwaTech1222",
+    avatar_url: "" # GitHub Pagesの準備ができたら設定
   },
   {
-    name: "山田 次郎",
-    job: "営業",
-    bio: "新規開拓営業を担当しています。お客様との関係構築が得意です。",
-    twitter_url: "https://twitter.com/yamada_sales",
-    avatar_url: ""
+    name: "吉澤 靖裕",
+    job: "エンジニア修行中",
+    bio: "前前職はSES企業で自動運転のシミュレーションのテスト業務を3年行なっておりました。まずは、自走力をつけ、その後、自社開発企業へ就職、そして、皆様のようなつよつよエンジニアになることを目標にしています！今後ともよろしくお願いします",
+    twitter_url: "https://x.com/hirohiro989",
+    avatar_url: "" # GitHub Pagesの準備ができたら設定
+  },
+    {
+    name: "Inshiku Han",
+    job: "フロントエンドエンジニア",
+    bio: "Frontend Developer from 🇰🇷, live in 🇯🇵",
+    twitter_url: "https://x.com/inshiku_han",
+    avatar_url: "" # GitHub Pagesの準備ができたら設定
+  },
+    {
+    name: "NayaTaiyo",
+    job: "インフラエンジニア",
+    bio: "6月にSATORI株式会社に入社いたしました。",
+    twitter_url: "https://x.com/NayaTaiyo",
+    avatar_url: "" # GitHub Pagesの準備ができたら設定
+  },
+    {
+    name: "津田 和樹",
+    job: "SQL使い",
+    bio: "テックワールドさんの動画で安達さんを知り本日から参加させていただきました！現職ではSQLを主に触っているのですが、全体的にスキル不足を感じているので向上できるよう頑張りたいと思います。2000年生まれで同年代の方が多いと聞いたので是非交流もできたら嬉しいです！！これからよろしくお願いいたします",
+    twitter_url: "",
+    avatar_url: "" # GitHub Pagesの準備ができたら設定
+  },
+    {
+    name: "やまけん",
+    job: "バックエンドエンジニア",
+    bio: "はじめまして、22卒のやまけんです！お仕事ではバックエンドの開発、運用やDBのクエリチューニングなどを行っています。",
+    twitter_url: "https://x.com/yamaken_0216",
+    avatar_url: "" # GitHub Pagesの準備ができたら設定
+  },
+    {
+    name: "hasumi naoki",
+    job: "システムエンジニア",
+    bio: "がんばります！",
+    twitter_url: "",
+    avatar_url: "" # GitHub Pagesの準備ができたら設定
+  },
+    {
+    name: "Momoko Nakajima",
+    job: "Findy新卒入社",
+    bio: "BBQの準備お手伝いします！！！",
+    twitter_url: "",
+    avatar_url: "" # GitHub Pagesの準備ができたら設定
+  },
+    {
+    name: "Ishikawa kazuki",
+    job: "機械学習エンジニア",
+    bio: "WED株式会社の機械学習エンジニア / 趣味は謎解き (解くのも作るのも) ",
+    twitter_url: "https://x.com/ishi2ki",
+    avatar_url: "" # GitHub Pagesの準備ができたら設定
+  },
+    {
+    name: "Oya Takenori",
+    job: "FindyのSRE",
+    bio: "ファインディの一人目SRE。お子さんと参加しています。",
+    twitter_url: "https://x.com/taken0r10",
+    avatar_url: "" # GitHub Pagesの準備ができたら設定
+  },
+    {
+    name: "Takemura Ayaka",
+    job: "クラウドエンジニア",
+    bio: "SESの会社でオンプレミスのネットワークエンジニアとして、クライアントのネットワーク運用保守や移行プロジェクトに携わる。2024年5月にクラウドエンジニアとして転職。",
+    twitter_url: "https://x.com/ayaka_t_1005",
+    avatar_url: "" # GitHub Pagesの準備ができたら設定
+  },
+    {
+    name: "西川 雄也",
+    job: "DevRel",
+    bio: "ファインディ第1期新卒。事業開発。テレアポと飛び込み→日本最大規模の学生ビジコン企画 →飲食店の事業継承事業で起業→Ubiq Inc. CSO→ファインディ ベンチャー稲門会事務局、井上達彦研究室(ビジネスモデル研究)",
+    twitter_url: "https://x.com/nishiphilo",
+    avatar_url: "" # GitHub Pagesの準備ができたら設定
+  },
+    {
+    name: "林",
+    job: "SWE",
+    bio: "SWE/ Rails, Next.js, GraphQLとかをよく触ってます。",
+    twitter_url: "https://x.com/hyuta555",
+    avatar_url: "" # GitHub Pagesの準備ができたら設定
+  },
+    {
+    name: "Sadayoshi Tada",
+    job: "筋肉エンジニア",
+    bio: "My life's work is to keep blogging about the trajectory of my growth!",
+    twitter_url: "https://x.com/taddy_919",
+    avatar_url: "" # GitHub Pagesの準備ができたら設定
+  },
+    {
+    name: "yusuke inoue",
+    job: "大学生 (修士1年)",
+    bio: "クラウドを作れる人になる！",
+    twitter_url: "https://x.com/cyokozai0",
+    avatar_url: "" # GitHub Pagesの準備ができたら設定
+  },
+    {
+    name: "fukushima ryo",
+    job: "",
+    bio: "",
+    twitter_url: "",
+    avatar_url: "" # GitHub Pagesの準備ができたら設定
+  },
+    {
+    name: "ninomiya ryo",
+    job: "Webエンジニア",
+    bio: "はじめまして:両手です。ついさっきFindyのイベントでadachiさんと繋がらせていただきましたRyoです！Webエンジニアやってます！趣味は筋トレ、洋楽、外国人と話すことです。皆さんと色々お話ししたいです！",
+    twitter_url: "https://x.com/ninomin_tech",
+    avatar_url: "" # GitHub Pagesの準備ができたら設定
+  },
+    {
+    name: "ninomiya ryo",
+    job: "Webエンジニア",
+    bio: "はじめまして:両手です。ついさっきFindyのイベントでadachiさんと繋がらせていただきましたRyoです！Webエンジニアやってます！趣味は筋トレ、洋楽、外国人と話すことです。皆さんと色々お話ししたいです！",
+    twitter_url: "https://x.com/ninomin_tech",
+    avatar_url: "" # GitHub Pagesの準備ができたら設定
   },
   {
-    name: "鈴木 美咲",
-    job: "マーケター",
-    bio: "デジタルマーケティング担当。SNS運用とコンテンツ制作をしています。",
-    twitter_url: "https://twitter.com/suzuki_marketing",
-    avatar_url: ""
+    name: "yuichi ito",
+    job: "SRE",
+    bio: "",
+    twitter_url: "",
+    avatar_url: "" # GitHub Pagesの準備ができたら設定
   },
   {
-    name: "渡辺 健一",
-    job: "プロジェクトマネージャー",
-    bio: "チーム全体のプロジェクト管理を行っています。効率的な進行を重視。",
-    twitter_url: "https://twitter.com/watanabe_pm",
-    avatar_url: ""
+    name: "yuto ota",
+    job: "エンジニア",
+    bio: "みなさま、はじめまして！太田悠斗（おおたゆうと）と申します。社会人1年目（22歳）で独立系Slerで勤務しています！（まだ研修中）。最近は、個人開発や新しい技術に触れることが大好きで、最近はフルスタックアプリや小規模なWebサービスをコツコツ作っています。この場を通して、みなさまから学ばせていただきながら、少しずつ成長していけたらと思っています。どうぞよろしくお願いいたします！",
+    twitter_url: "https://x.com/yutttoooo09",
+    avatar_url: "" # GitHub Pagesの準備ができたら設定
   },
   {
-    name: "高橋 麻衣",
-    job: "人事",
-    bio: "採用と人材育成を担当。働きやすい環境づくりに取り組んでいます。",
-    twitter_url: "https://twitter.com/takahashi_hr",
-    avatar_url: ""
-  }
+    name: "れなっち",
+    job: "ソフトウェアエンジニア",
+    bio: "HTMLとCSSに感動して、未経験からエンジニアへキャリアチェンジして2年目。現在は、フロントエンドエンジニアとして自社開発に携わる。また、副業でプログラミングスクールの講師をしている。技術力を上げること・エンジニアに関わるさまざまな仕事を出来るようになることを目標にしている。TechBullではイベント運営や広報のお手伝いをしている。",
+    twitter_url: "https://x.com/hfslca7439",
+    avatar_url: "" # GitHub Pagesの準備ができたら設定
+  },
+  {
+    name: "なかyarn",
+    job: "修行中",
+    bio: "未経験エンジニア向けの研修や、プログラミングスクールでの質問対応・就職支援を担当。メインの開発言語はRuby on Railsで、時々Javaも使用。サービス全体の構造を理解したいという思いから、フロントエンドやクラウドなど幅広い分野を横断的に学習中。TechBullではイベント運営や広報のお手伝いをしている。",
+    twitter_url: "https://x.com/nakayarn",
+    avatar_url: "" # GitHub Pagesの準備ができたら設定
+  },  {
+    name: "菊本 久寿",
+    job: "RUNTEQ校長",
+    bio: "SIerなどを経てngigroup（現ユナイテッド）技術部部長に就任し、アドテク関連サービスの立ち上げを行う。  2012年よりフリーランスとして独立し、複数のスタートアップの開発支援を行う。その後ポケットコンシェルジュを運営する株式会社ポケットメニューの取締役CTOに就任。 退任後2014年10月に新サービスの立ち上げに特化して開発を行う株式会社スタートアップテクノロジーを設立。 様々なスタートアップの開発や、技術指導を行う。現在はプログラミングスクール「RUNTEQ」の校長としてWebエンジニアを育成。約1000名のWebエンジニアを輩出してきた。",
+    twitter_url: "https://x.com/hisaju01/bio",
+    avatar_url: "" # GitHub Pagesの準備ができたら設定
+  },
+  
 ]
 
 users = users_data.map do |user_data|
