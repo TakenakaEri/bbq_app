@@ -68,35 +68,35 @@ users_data = [
     avatar_url: "https://ca.slack-edge.com/T7W2VHWGP-U08751ZLQP4-8094aed997a3-512" # GitHub Pagesの準備ができたら設定
   },
     {
-    name: "財津宏幸",
+    name: "財津 宏幸",
     job: "インフラエンジニア",
     bio: "熊本出身の30歳です！経歴は、酪農組合→システム開発→自動車工場で、現在はインフラエンジニアとしてAWSの構築をしております。インフラエンジニアは1年目のペーペーですが、さまざまな技術を学びたく、参加させていただきました。",
     twitter_url: "https://x.com/ponkichi_infra",
-    avatar_url: "" # GitHub Pagesの準備ができたら設定
+    avatar_url: "https://ca.slack-edge.com/T7W2VHWGP-U08VCUS98JF-d4a25c712c4b-512" # GitHub Pagesの準備ができたら設定
   },
     {
     name: "Taichi Iwaki",
     job: "クラウドインフラエンジニア",
     bio: "このようなコミュニティに参加するのは、初めてで不慣れな部分もあると思いますが、よろしくお願いします！",
     twitter_url: "https://x.com/IwaTech1222",
-    avatar_url: "" # GitHub Pagesの準備ができたら設定
+    avatar_url: "https://ca.slack-edge.com/T7W2VHWGP-U08M9ST8ULQ-176dc2bdca08-512" # GitHub Pagesの準備ができたら設定
   },
   {
     name: "吉澤 靖裕",
     job: "エンジニア修行中",
     bio: "前前職はSES企業で自動運転のシミュレーションのテスト業務を3年行なっておりました。まずは、自走力をつけ、その後、自社開発企業へ就職、そして、皆様のようなつよつよエンジニアになることを目標にしています！今後ともよろしくお願いします",
     twitter_url: "https://x.com/hirohiro989",
-    avatar_url: "" # GitHub Pagesの準備ができたら設定
+    avatar_url: "https://ca.slack-edge.com/T7W2VHWGP-U090PJUBV3J-272cd1545a7c-512" # GitHub Pagesの準備ができたら設定
   },
     {
     name: "Inshiku Han",
     job: "フロントエンドエンジニア",
     bio: "Frontend Developer from 🇰🇷, live in 🇯🇵",
     twitter_url: "https://x.com/inshiku_han",
-    avatar_url: "" # GitHub Pagesの準備ができたら設定
+    avatar_url: "https://ca.slack-edge.com/T7W2VHWGP-U08HW3YKWAW-435ebcd05a2f-512" # GitHub Pagesの準備ができたら設定
   },
     {
-    name: "NayaTaiyo",
+    name: "Naya Taiyo",
     job: "インフラエンジニア",
     bio: "6月にSATORI株式会社に入社いたしました。",
     twitter_url: "https://x.com/NayaTaiyo",
@@ -107,28 +107,28 @@ users_data = [
     job: "SQL使い",
     bio: "テックワールドさんの動画で安達さんを知り本日から参加させていただきました！現職ではSQLを主に触っているのですが、全体的にスキル不足を感じているので向上できるよう頑張りたいと思います。2000年生まれで同年代の方が多いと聞いたので是非交流もできたら嬉しいです！！これからよろしくお願いいたします",
     twitter_url: "",
-    avatar_url: "" # GitHub Pagesの準備ができたら設定
+    avatar_url: "https://ca.slack-edge.com/T7W2VHWGP-U0925JR6RHT-9b3c4dd46e29-512" # GitHub Pagesの準備ができたら設定
   },
     {
-    name: "やまけん",
+    name: "山本 健太",
     job: "バックエンドエンジニア",
     bio: "はじめまして、22卒のやまけんです！お仕事ではバックエンドの開発、運用やDBのクエリチューニングなどを行っています。",
     twitter_url: "https://x.com/yamaken_0216",
-    avatar_url: "" # GitHub Pagesの準備ができたら設定
+    avatar_url: "https://ca.slack-edge.com/T7W2VHWGP-U08SY55BJLT-5284e99b157f-512" # GitHub Pagesの準備ができたら設定
   },
     {
     name: "hasumi naoki",
     job: "システムエンジニア",
     bio: "がんばります！",
     twitter_url: "",
-    avatar_url: "" # GitHub Pagesの準備ができたら設定
+    avatar_url: "https://ca.slack-edge.com/T7W2VHWGP-U05V3PJ3AFK-4352cadc823b-512" # GitHub Pagesの準備ができたら設定
   },
     {
     name: "Momoko Nakajima",
     job: "Findy新卒入社",
     bio: "BBQの準備お手伝いします！！！",
     twitter_url: "",
-    avatar_url: "" # GitHub Pagesの準備ができたら設定
+    avatar_url: "https://ca.slack-edge.com/T7W2VHWGP-U090BAW6DH7-b20ab7c2a673-512" # GitHub Pagesの準備ができたら設定
   },
     {
     name: "Ishikawa kazuki",
@@ -142,7 +142,7 @@ users_data = [
     job: "FindyのSRE",
     bio: "ファインディの一人目SRE。お子さんと参加しています。",
     twitter_url: "https://x.com/taken0r10",
-    avatar_url: "" # GitHub Pagesの準備ができたら設定
+    avatar_url: "https://ca.slack-edge.com/T7W2VHWGP-U0912AV68MB-55c7ffea1cab-512" # GitHub Pagesの準備ができたら設定
   },
     {
     name: "Takemura Ayaka",
@@ -156,63 +156,56 @@ users_data = [
     job: "DevRel",
     bio: "ファインディ第1期新卒。事業開発。テレアポと飛び込み→日本最大規模の学生ビジコン企画 →飲食店の事業継承事業で起業→Ubiq Inc. CSO→ファインディ ベンチャー稲門会事務局、井上達彦研究室(ビジネスモデル研究)",
     twitter_url: "https://x.com/nishiphilo",
-    avatar_url: "" # GitHub Pagesの準備ができたら設定
+    avatar_url: "https://ca.slack-edge.com/T7W2VHWGP-U08U3RE7LLS-22ff46f43d9d-512" # GitHub Pagesの準備ができたら設定
   },
     {
     name: "林",
     job: "SWE",
     bio: "SWE/ Rails, Next.js, GraphQLとかをよく触ってます。",
     twitter_url: "https://x.com/hyuta555",
-    avatar_url: "" # GitHub Pagesの準備ができたら設定
+    avatar_url: "https://ca.slack-edge.com/T7W2VHWGP-U08E769HWQ2-41ca1a50964a-192" # GitHub Pagesの準備ができたら設定
   },
     {
     name: "Sadayoshi Tada",
     job: "筋肉エンジニア",
     bio: "My life's work is to keep blogging about the trajectory of my growth!",
     twitter_url: "https://x.com/taddy_919",
-    avatar_url: "" # GitHub Pagesの準備ができたら設定
+    avatar_url: "https://ca.slack-edge.com/T7W2VHWGP-U08HTQU1PCM-8d59c3cff49e-512" # GitHub Pagesの準備ができたら設定
   },
     {
     name: "yusuke inoue",
     job: "大学生 (修士1年)",
     bio: "クラウドを作れる人になる！",
     twitter_url: "https://x.com/cyokozai0",
-    avatar_url: "" # GitHub Pagesの準備ができたら設定
+    avatar_url: "https://ca.slack-edge.com/T7W2VHWGP-U08LDEN5Z0X-97a3f18c28cc-512" # GitHub Pagesの準備ができたら設定
   },
     {
     name: "fukushima ryo",
     job: "",
     bio: "",
     twitter_url: "",
-    avatar_url: "" # GitHub Pagesの準備ができたら設定
+    avatar_url: "https://ca.slack-edge.com/T7W2VHWGP-U08ULDZP472-d08b817506f0-512" # GitHub Pagesの準備ができたら設定
   },
     {
     name: "ninomiya ryo",
     job: "Webエンジニア",
     bio: "はじめまして:両手です。ついさっきFindyのイベントでadachiさんと繋がらせていただきましたRyoです！Webエンジニアやってます！趣味は筋トレ、洋楽、外国人と話すことです。皆さんと色々お話ししたいです！",
     twitter_url: "https://x.com/ninomin_tech",
-    avatar_url: "" # GitHub Pagesの準備ができたら設定
-  },
-    {
-    name: "ninomiya ryo",
-    job: "Webエンジニア",
-    bio: "はじめまして:両手です。ついさっきFindyのイベントでadachiさんと繋がらせていただきましたRyoです！Webエンジニアやってます！趣味は筋トレ、洋楽、外国人と話すことです。皆さんと色々お話ししたいです！",
-    twitter_url: "https://x.com/ninomin_tech",
-    avatar_url: "" # GitHub Pagesの準備ができたら設定
+    avatar_url: "https://ca.slack-edge.com/T7W2VHWGP-U08VCDCTP4H-55c61e93ecf8-512" # GitHub Pagesの準備ができたら設定
   },
   {
     name: "yuichi ito",
     job: "SRE",
     bio: "",
     twitter_url: "",
-    avatar_url: "" # GitHub Pagesの準備ができたら設定
+    avatar_url: "https://ca.slack-edge.com/T7W2VHWGP-U08L5HUR78F-d0a67ad4db1c-512" # GitHub Pagesの準備ができたら設定
   },
   {
     name: "yuto ota",
     job: "エンジニア",
     bio: "みなさま、はじめまして！太田悠斗（おおたゆうと）と申します。社会人1年目（22歳）で独立系Slerで勤務しています！（まだ研修中）。最近は、個人開発や新しい技術に触れることが大好きで、最近はフルスタックアプリや小規模なWebサービスをコツコツ作っています。この場を通して、みなさまから学ばせていただきながら、少しずつ成長していけたらと思っています。どうぞよろしくお願いいたします！",
     twitter_url: "https://x.com/yutttoooo09",
-    avatar_url: "" # GitHub Pagesの準備ができたら設定
+    avatar_url: "https://ca.slack-edge.com/T7W2VHWGP-U09A5U4JSSD-01ac345151d3-512" # GitHub Pagesの準備ができたら設定
   },
   {
     name: "れなっち",
@@ -232,7 +225,7 @@ users_data = [
     job: "RUNTEQ校長",
     bio: "SIerなどを経てngigroup（現ユナイテッド）技術部部長に就任し、アドテク関連サービスの立ち上げを行う。  2012年よりフリーランスとして独立し、複数のスタートアップの開発支援を行う。その後ポケットコンシェルジュを運営する株式会社ポケットメニューの取締役CTOに就任。 退任後2014年10月に新サービスの立ち上げに特化して開発を行う株式会社スタートアップテクノロジーを設立。 様々なスタートアップの開発や、技術指導を行う。現在はプログラミングスクール「RUNTEQ」の校長としてWebエンジニアを育成。約1000名のWebエンジニアを輩出してきた。",
     twitter_url: "https://x.com/hisaju01/bio",
-    avatar_url: "" # GitHub Pagesの準備ができたら設定
+    avatar_url: "https://pbs.twimg.com/profile_images/1326716175175147526/uM7aGegN_400x400.jpg" # GitHub Pagesの準備ができたら設定
   },
   
 ]
