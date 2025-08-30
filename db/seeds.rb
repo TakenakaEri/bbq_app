@@ -1,15 +1,3 @@
-# This file should ensure the existence of records required to run the application in every environment (production,
-# development, test). The code here should be idempotent so that it can be executed at any point in every environment.
-# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Example:
-#
-#   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
-#     MovieGenre.find_or_create_by!(name: genre_name)
-#   end
-
-# db/seeds.rb
-
 # 既存のデータをクリア
 puts "既存データをクリアしています..."
 Participation.destroy_all
@@ -19,12 +7,12 @@ Event.destroy_all
 # イベント作成
 puts "イベントを作成しています..."
 bbq_event = Event.create!(
-  name: "夏のBBQ大会 2025",
-  date: DateTime.new(2025, 8, 30, 11, 0),
-  location: "多摩川河川敷BBQ場",
-  latitude: 35.6762,
-  longitude: 139.6503,
-  description: "夏の終わりを楽しむBBQイベント！みんなでワイワイ楽しみましょう"
+  name: "TechBull BBQ 2025",
+  date: DateTime.new(2025, 8, 30, 19, 0),
+  location: "THE BBQ BEACH in TOYOSU",
+  latitude: 35.642342,
+  longitude: 139.778018,
+  description: "TechBullメンバーの交流をかねて、みんなでワイワイお肉を楽しみましょう！"
 )
 
 # ユーザー作成

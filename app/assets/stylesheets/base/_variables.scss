@@ -1,6 +1,7 @@
-// カラーパレット
-$primary-color: #ff6b6b;
-$secondary-color: #ffa500;
+// カラーパレット（青色ベース）
+$primary-color: #8eebbf; // 明るい青
+$secondary-color: #0eae8e; // 濃い青
+$accent-color: #06b6d4; // シアン
 $text-primary: #1e293b;
 $text-secondary: #475569;
 $text-muted: #64748b;
@@ -8,15 +9,20 @@ $text-muted: #64748b;
 // 背景色
 $bg-primary: #ffffff;
 $bg-secondary: #f8fafc;
-$bg-tertiary: #f1f5f9;
+$bg-tertiary: #e0f2fe; // 薄い青
 
-// ボーダー
+// ボーダーß
 $border-light: #e2e8f0;
+$border-blue: #93c5fd; // 青いボーダー
 $border-radius: 16px;
 $border-radius-sm: 12px;
 $border-radius-full: 50%;
 
-// スペーシング
+// グラデーション用
+$gradient-start: #3b82f6; // 青
+$gradient-end: #1e40af; // ダークブルー
+
+// 既存の変数はそのまま
 $spacing-xs: 0.25rem;
 $spacing-sm: 0.5rem;
 $spacing-md: 1rem;
@@ -24,7 +30,6 @@ $spacing-lg: 1.5rem;
 $spacing-xl: 2rem;
 $spacing-2xl: 3rem;
 
-// フォント
 $font-size-sm: 0.95rem;
 $font-size-base: 1rem;
 $font-size-lg: 1.1rem;
@@ -33,10 +38,8 @@ $font-size-2xl: 1.8rem;
 $font-size-3xl: 2rem;
 $font-size-4xl: 2.5rem;
 
-// シャドウ
 $shadow-sm: 0 4px 20px rgba(0, 0, 0, 0.1);
-$shadow-md: 0 8px 25px rgba(255, 107, 107, 0.15);
-$shadow-lg: 0 4px 15px rgba(255, 107, 107, 0.3);
+$shadow-md: 0 8px 25px rgba(59, 130, 246, 0.15);
+$shadow-lg: 0 4px 15px rgba(59, 130, 246, 0.3);
 
-// トランジション
 $transition-base: all 0.3s ease;

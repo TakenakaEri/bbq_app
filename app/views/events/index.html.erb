@@ -1,7 +1,6 @@
 <div class="header">
   <div class="container">
-    <h1>🍖 BBQアプリ</h1>
-    <p>みんなで楽しむバーベキューイベント</p>
+    <h1>TechBull BBQ</h1>
   </div>
 </div>
 
@@ -9,7 +8,7 @@
   <% @events.each do |event| %>
     <!-- アイキャッチ・イベント詳細 -->
     <div class="hero-section">
-      <div class="hero-image">🔥</div>
+
       
       <div class="event-details">
         <h2 class="event-title"><%= event.name %></h2>
@@ -31,7 +30,7 @@
               <% if event.latitude && event.longitude %>
                 <br>
                 <%= link_to "GoogleMapで見る →", 
-                    "https://maps.google.com/?q=#{event.latitude},#{event.longitude}", 
+                    "https://www.google.co.jp/maps/place/THE+BBQ+BEACH+in+TOYOSU/@35.6420821,139.7756142,16.85z/data=!4m6!3m5!1s0x601889442ba4b085:0xef096e81f26a88!8m2!3d35.6421089!4d139.7780151!16s%2Fg%2F11h_y__h85?entry=ttu&g_ep=EgoyMDI1MDgyNS4wIKXMDSoASAFQAw%3D%3D", 
                     target: "_blank", class: "map-link" %>
               <% end %>
             </div>
@@ -75,8 +74,5 @@
         <% end %>
       </div>
     </div>
-
-
-
   <% end %>
 </div>
