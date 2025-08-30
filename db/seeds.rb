@@ -12,7 +12,7 @@ bbq_event = Event.create!(
   location: "THE BBQ BEACH in TOYOSU",
   latitude: 35.642342,
   longitude: 139.778018,
-  description: "TechBullメンバーの交流をかねて、みんなでワイワイお肉を楽しみましょう！"
+  description: "TechBullメンバーの交流をかねて、ワイワイお肉を楽しみましょう！"
 )
 
 # ユーザー作成
@@ -23,21 +23,21 @@ users_data = [
     job: "FindyのSRE",
     bio: "1989年生まれのFindy/SRE。エンジニア歴は13年目。ホスティングから大規模なアドテクなどのインフラエンジニアとして携わる。現在はSREとしてサービスの信頼性向上やセキュリティ強化などを担当。個人事業主では数社サーバー保守とベンチャー企業のインフラコンサルティングを行うほか、TechBullを創業し、未経験者向けにSREのコーチングやコミュニティ運営、LT大会の開催、 会員管理システム「Members」の開発をリードしている。さらに、エンジニア向けYouTubeメディア「TECH WORLD」ではSREとの対談を行い、過去には脆弱性スキャナ「Vuls」のOSS活動にも貢献。愛犬でもある所長のBull氏に疲労困憊。",
     twitter_url: "https://x.com/adachin0817",
-    avatar_url: "" # GitHub Pagesの準備ができたら設定
+    avatar_url: "https://github.com/user-attachments/assets/93ed8c4a-77bf-4661-8311-0dc3ffe59a1c" # GitHub Pagesの準備ができたら設定
   },
   {
     name: "Hara Koji",
     job: "FindyのSRE",
     bio: "未経験からエンジニアへキャリアチェンジしエンジニア歴としては4年目となる。SESにて様々なAWS案件に携わる。SRE領域の知識を身につけるためTechBullコミュニティへ参画。元運用監視オペレーターという立場からAWSエンジニアやSREへキャリアアップした経験やクラウド関連の記事を執筆しつつ、コミュニティの技術フォローと1on1を実施し、現在はSREとして、Datadogでのオブザーバビリティ強化やTerraformでのIaC環境の整備、コスト削減施策の実施などを行っている。",
     twitter_url: "https://x.com/kouzyunJa",
-    avatar_url: "" # GitHub Pagesの準備ができたら設定
+    avatar_url: "https://github.com/user-attachments/assets/9bb86255-13f4-46fd-9cad-998cf361cae1" # GitHub Pagesの準備ができたら設定
   },
     {
     name: "Tomita kazuki",
     job: "ソフトウェアエンジニア・SRE",
     bio: "約7年間、和食料理人として働き、コロナ禍をきっかけにエンジニアへとキャリアチェンジする。現在はRuby on Railsを中心にバックエンド開発を担当し、ReactやTypeScriptを使ったフロントエンド開発にも取り組んでいる。以前はプログラミングスクールを運営する会社で、エンジニア講師として未経験の方の学習支援を行う。TechBullに出会えたことで、今後はSREになるために技術のキャッチアップや運営チームとして活動。",
     twitter_url: "https://x.com/Cooking_ENG",
-    avatar_url: "" # GitHub Pagesの準備ができたら設定
+    avatar_url: "https://github.com/user-attachments/assets/bf7379b7-1f8c-464b-86b4-14d2286c977f" # GitHub Pagesの準備ができたら設定
   },
     {
     name: "Hashino Mikiko",
@@ -51,7 +51,7 @@ users_data = [
     job: "SaaS開発",
     bio: "学生時代はプログラミングスクールでメンターの経験。現在は24卒Webエンジニアとして、金融ドメインのSaaS開発に従事している。フロントエンドからインフラまで、フルスタックにできるエンジニアを目指している。",
     twitter_url: "https://x.com/tabamarine220",
-    avatar_url: "" # GitHub Pagesの準備ができたら設定
+    avatar_url: "https://github.com/user-attachments/assets/d384ebfd-cfd7-4193-aab5-e6ac12baeaeb" # GitHub Pagesの準備ができたら設定
   },
     {
     name: "吉野友啓",
@@ -100,7 +100,7 @@ users_data = [
     job: "インフラエンジニア",
     bio: "6月にSATORI株式会社に入社いたしました。",
     twitter_url: "https://x.com/NayaTaiyo",
-    avatar_url: "" # GitHub Pagesの準備ができたら設定
+    avatar_url: "https://github.com/user-attachments/assets/f7213ae6-84ab-4b9a-9d42-71dc7a72066a" # GitHub Pagesの準備ができたら設定
   },
     {
     name: "津田 和樹",
@@ -135,7 +135,7 @@ users_data = [
     job: "機械学習エンジニア",
     bio: "WED株式会社の機械学習エンジニア / 趣味は謎解き (解くのも作るのも) ",
     twitter_url: "https://x.com/ishi2ki",
-    avatar_url: "" # GitHub Pagesの準備ができたら設定
+    avatar_url: "https://github.com/user-attachments/assets/4bd718a9-64e9-42f5-8070-0f44387f3c05" # GitHub Pagesの準備ができたら設定
   },
     {
     name: "Oya Takenori",
@@ -149,7 +149,7 @@ users_data = [
     job: "クラウドエンジニア",
     bio: "SESの会社でオンプレミスのネットワークエンジニアとして、クライアントのネットワーク運用保守や移行プロジェクトに携わる。2024年5月にクラウドエンジニアとして転職。",
     twitter_url: "https://x.com/ayaka_t_1005",
-    avatar_url: "" # GitHub Pagesの準備ができたら設定
+    avatar_url: "https://github.com/user-attachments/assets/967672fd-bb69-4b67-82d6-ab596b6988fb" # GitHub Pagesの準備ができたら設定
   },
     {
     name: "西川 雄也",
@@ -219,14 +219,14 @@ users_data = [
     job: "ソフトウェアエンジニア",
     bio: "HTMLとCSSに感動して、未経験からエンジニアへキャリアチェンジして2年目。現在は、フロントエンドエンジニアとして自社開発に携わる。また、副業でプログラミングスクールの講師をしている。技術力を上げること・エンジニアに関わるさまざまな仕事を出来るようになることを目標にしている。TechBullではイベント運営や広報のお手伝いをしている。",
     twitter_url: "https://x.com/hfslca7439",
-    avatar_url: "" # GitHub Pagesの準備ができたら設定
+    avatar_url: "https://github.com/user-attachments/assets/57d02d5d-cdfc-41fd-927a-5d6c81a1a67b" # GitHub Pagesの準備ができたら設定
   },
   {
     name: "なかyarn",
     job: "修行中",
     bio: "未経験エンジニア向けの研修や、プログラミングスクールでの質問対応・就職支援を担当。メインの開発言語はRuby on Railsで、時々Javaも使用。サービス全体の構造を理解したいという思いから、フロントエンドやクラウドなど幅広い分野を横断的に学習中。TechBullではイベント運営や広報のお手伝いをしている。",
     twitter_url: "https://x.com/nakayarn",
-    avatar_url: "" # GitHub Pagesの準備ができたら設定
+    avatar_url: "https://github.com/user-attachments/assets/171ab2a7-0510-4866-b336-bb379c920d52" # GitHub Pagesの準備ができたら設定
   },  {
     name: "菊本 久寿",
     job: "RUNTEQ校長",

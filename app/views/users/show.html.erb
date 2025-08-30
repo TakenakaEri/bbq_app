@@ -1,6 +1,6 @@
 <div class="header">
   <div class="container">
-    <h1>🍖 BBQアプリ</h1>
+    <h1>TechBull BBQ</h1>
     <p>参加者詳細</p>
   </div>
 </div>
@@ -19,20 +19,13 @@
     
     <h2 class="participant-name"><%= @user.name %></h2>
     <span class="participant-job"><%= @user.job || "未設定" %></span>
-    
+  
     <div class="social-links">
       <% if @user.twitter_url.present? %>
-        <%= link_to @user.twitter_url, target: "_blank", class: "social-link" do %>🐦<% end %>
+        <%= link_to @user.twitter_url, target: "_blank", class: "social-link" do %>x<% end %>
       <% end %>
     </div>
-    
-    <% if @participation&.message.present? %>
-      <div class="user-message">
-        <h3>参加への意気込み</h3>
-        <p>"<%= @participation.message %>"</p>
-      </div>
-    <% end %>
-    
+
     <% if @user.bio.present? %>
       <div class="user-message">
         <h3>自己紹介</h3>

@@ -61,13 +61,13 @@
       <div class="participants-grid">
         <% event.users.each do |user| %>
           <%= link_to user_path(user), class: "participant-card" do %>
-            <div class="avatar">
-              <% if user.avatar_url.present? %>
-                <%= image_tag user.avatar_url, alt: user.name %>
-              <% else %>
-                <%= user.name.first %>
-              <% end %>
-            </div>
+          <div class="avatar">
+            <% if user.avatar_url.present? %>
+              <%= image_tag user.avatar_url, alt: user.name %>
+            <% else %>
+              <%= user.name.first %>
+            <% end %>
+          </div>
             <h4 class="participant-name"><%= user.name %></h4>
             <span class="participant-job"><%= user.job || "未設定" %></span>
           <% end %>
