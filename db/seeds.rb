@@ -37,14 +37,14 @@ users_data = [
     job: "ソフトウェアエンジニア・SRE",
     bio: "約7年間、和食料理人として働き、コロナ禍をきっかけにエンジニアへとキャリアチェンジする。現在はRuby on Railsを中心にバックエンド開発を担当し、ReactやTypeScriptを使ったフロントエンド開発にも取り組んでいる。以前はプログラミングスクールを運営する会社で、エンジニア講師として未経験の方の学習支援を行う。TechBullに出会えたことで、今後はSREになるために技術のキャッチアップや運営チームとして活動。",
     twitter_url: "https://x.com/Cooking_ENG",
-    avatar_url: "https://github.com/user-attachments/assets/bf7379b7-1f8c-464b-86b4-14d2286c977f" # GitHub Pagesの準備ができたら設定
+    avatar_url: "https://github.com/user-attachments/assets/e452471e-7582-4b22-a1f6-bc25d9df6bdd" # GitHub Pagesの準備ができたら設定
   },
     {
     name: "Hashino Mikiko",
     job: "バックエンドエンジニア",
     bio: "学生時代は、エンジニア学生団体の代表として企画・運営を担いながら、エンジニアリングのインターンシップにも積極的に参加。新卒では、ファッションECサイトのバックエンド開発に携わる。現在は、Findyでバックエンドを担当。「omochi gem」のOSS開発もしており、Shibuya.rbも参加している。将来は Embedded SREを目指しています。",
     twitter_url: "https://x.com/mikiko_bridge",
-    avatar_url: "" # GitHub Pagesの準備ができたら設定
+    avatar_url: "https://github.com/user-attachments/assets/bf7379b7-1f8c-464b-86b4-14d2286c977f" # GitHub Pagesの準備ができたら設定
   },
     {
     name: "Taba Hiroki",
@@ -54,18 +54,18 @@ users_data = [
     avatar_url: "https://github.com/user-attachments/assets/d384ebfd-cfd7-4193-aab5-e6ac12baeaeb" # GitHub Pagesの準備ができたら設定
   },
     {
-    name: "吉野友啓",
+    name: "吉野 友啓",
     job: "テクノブレーン/キャリアアドバイザー",
     bio: "酒場とダーツが好きです！微力ながら盛り上げられればと思います！",
     twitter_url: "https://x.com/tbcyoshino",
-    avatar_url: "" # GitHub Pagesの準備ができたら設定
+    avatar_url: "https://github.com/user-attachments/assets/79ad5242-378b-4f27-b074-501cc153d186" # GitHub Pagesの準備ができたら設定
   },
     {
     name: "くのやす",
     job: "フルスタックエンジニア",
     bio: "スタートアップでフルスタックエンジニアしてます。",
     twitter_url: "https://x.com/kunoyasu",
-    avatar_url: "" # GitHub Pagesの準備ができたら設定
+    avatar_url: "https://ca.slack-edge.com/T7W2VHWGP-U08751ZLQP4-8094aed997a3-512" # GitHub Pagesの準備ができたら設定
   },
     {
     name: "財津宏幸",
